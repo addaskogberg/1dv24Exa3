@@ -5,7 +5,9 @@ using System.Text;
 
 namespace examination3
 {
-    public enum CardFace
+    public enum CardSuits
     {
+        Spades, Hearts, Diamonds, Clubs
     }
 }
+
