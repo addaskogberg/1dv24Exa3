@@ -7,20 +7,25 @@ namespace examination3
 {
     public class Dealer : Player
     {
-        private int deck;
+        private Deck dealerDeck;
+        private Deck trashDeck;
         private int player;
-        private int trashDeck;
         // private string name;
 
         public Dealer(string name)
             : base(name)
         {
-
+            dealerDeck = new Deck(true);
+            foreach(var card in dealerDeck.Cards)
+            {
+                Console.WriteLine(card.Face + " " + card.Suit);
+            }
+            
         }
 
-        public int Deck
+        public Deck DealerDeck
         {
-            get => default(int);
+            get => default(Deck);
             set
             {
             }
@@ -34,9 +39,9 @@ namespace examination3
             }
         }
 
-        public int TrashDeck
+        public Deck TrashDeck
         {
-            get => default(int);
+            get => default(Deck);
             set
             {
             }

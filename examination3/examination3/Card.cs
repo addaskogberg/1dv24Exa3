@@ -7,28 +7,34 @@ namespace examination3
 {
     public class Card
     {
-        private CardSuits suit; 
+        private string suit; 
         private string face;
 
         public string Face
         {
-            get => default(string);
+            get
+            {
+                return this.face;
+            }
             private set
             {
                 this.face = value;
             }
         }
 
-        public CardSuits Suit
+        public String Suit
         {
-            get => default(CardSuits);
+            get
+            {
+                return this.suit;
+            }
             set
             {
                 this.suit = value;
             }
         }
 
-        public Card(CardSuits suit, string face)
+        public Card(String suit, string face)
         {
             Suit = suit;
             Face = face;
