@@ -7,7 +7,35 @@ namespace examination3
 {
     public class Card
     {
-        public void createCard()
+        private int suite;
+        private int face;
+        private int card;
+
+        public int Card
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int Face
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int Suite
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public void CreateCard()
         {
             throw new System.NotImplementedException();
         }

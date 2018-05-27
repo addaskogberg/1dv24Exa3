@@ -7,17 +7,22 @@ namespace examination3
 {
     public class Deck
     {
-        public void addCards()
+        public void InitiateDeck()
         {
             throw new System.NotImplementedException();
         }
 
-        public void shuffelDeck()
+        public void ShuffelDeck()
         {
             throw new System.NotImplementedException();
         }
 
-        public void toTrash()
+        public void MoveToTrashDeck()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void FillDeck()
         {
             throw new System.NotImplementedException();
         }

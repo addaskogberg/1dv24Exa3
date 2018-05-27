@@ -7,17 +7,32 @@ namespace examination3
 {
     public class Player
     {
-        public void isBusted()
+        private int maxCardSum;
+
+        public int MaxCardSum
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public void IsBusted()
         {
             throw new System.NotImplementedException();
         }
 
-        public void emptyHand()
+        public void EmptiesHand()
         {
             throw new System.NotImplementedException();
         }
 
-        public void hasFiveCards()
+        public void HasFiveCards()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void FullHand()
         {
             throw new System.NotImplementedException();
         }

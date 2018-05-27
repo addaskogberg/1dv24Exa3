@@ -7,6 +7,38 @@ namespace examination3
 {
     public class BlackjackManager
     {
-        Deck deck = new Deck();
+        Deck player = new Deck();
+        private int dealer;
+
+        public int Dealer
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public int Player
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public void StartGame()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void PrepareNewRound()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void RunGame()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

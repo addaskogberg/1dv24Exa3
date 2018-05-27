@@ -7,5 +7,29 @@ namespace examination3
 {
     public class Hand
     {
+        private int sum;
+
+        public int Sum
+        {
+            get => default(int);
+            set
+            {
+            }
+        }
+
+        public void TranslateFaces()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void AddCard()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void ToString()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
