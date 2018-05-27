@@ -7,5 +7,9 @@ namespace examination3
 {
     public class Card
     {
+        public void createCard()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace examination3
 {
-    public class Dealer : Player
+    public class Hand
     {
     }
 }

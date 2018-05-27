@@ -16,5 +16,10 @@ namespace examination3
         {
             throw new System.NotImplementedException();
         }
+
+        public void toTrash()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
