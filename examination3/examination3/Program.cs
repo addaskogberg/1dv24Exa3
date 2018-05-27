@@ -10,11 +10,8 @@ namespace examination3
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("--------------");
-
-
-            Console.Read();
+            BlackjackManager blackjackmanager = new BlackjackManager();
+            blackjackmanager.StartGame();
         }
     }
 }

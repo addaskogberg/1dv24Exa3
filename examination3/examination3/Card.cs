@@ -7,37 +7,31 @@ namespace examination3
 {
     public class Card
     {
-        private int suite;
-        private int face;
-        private int card;
+        private CardSuits suit; 
+        private string face;
 
-        public int Card
+        public string Face
         {
-            get => default(int);
-            set
+            get => default(string);
+            private set
             {
+                this.face = value;
             }
         }
 
-        public int Face
+        public CardSuits Suit
         {
-            get => default(int);
+            get => default(CardSuits);
             set
             {
+                this.suit = value;
             }
         }
 
-        public int Suite
+        public Card(CardSuits suit, string face)
         {
-            get => default(int);
-            set
-            {
-            }
-        }
-
-        public void CreateCard()
-        {
-            throw new System.NotImplementedException();
+            Suit = suit;
+            Face = face;
         }
     }
 }

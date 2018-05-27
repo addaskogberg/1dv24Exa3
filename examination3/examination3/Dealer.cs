@@ -10,6 +10,13 @@ namespace examination3
         private int deck;
         private int player;
         private int trashDeck;
+        // private string name;
+
+        public Dealer(string name)
+            : base(name)
+        {
+
+        }
 
         public int Deck
         {

@@ -27,7 +27,7 @@ namespace examination3
             throw new System.NotImplementedException();
         }
 
-        public void ToString()
+        public override string ToString()
         {
             throw new System.NotImplementedException();
         }

@@ -17,21 +17,21 @@
   <Class Name="examination3.Card">
     <Position X="6.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAQAAAAAAAAAAABAAAAAQAACAAAAAgAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAABAAAAAQAABAAAAAQAACAAAAAgAAAAQAA=</HashCode>
       <FileName>Card.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.Player">
     <Position X="8.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEQAAAAACQAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AEQAAAAACQAAAAEAAAAAAAAAAAAEAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.BlackjackManager">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAEAgAABAAAABAAQAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAEAgAABAAAAAIAQAAAAAAAA=</HashCode>
       <FileName>BlackjackManager.cs</FileName>
     </TypeIdentifier>
   </Class>

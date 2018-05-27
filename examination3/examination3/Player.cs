@@ -8,6 +8,12 @@ namespace examination3
     public class Player
     {
         private int maxCardSum;
+        private String name;
+
+        public Player(string name)
+        {
+            this.Name = name;
+        }
 
         public int MaxCardSum
         {
@@ -16,6 +22,8 @@ namespace examination3
             {
             }
         }
+
+        public string Name { get => name; set => name = value; }
 
         public void IsBusted()
         {
