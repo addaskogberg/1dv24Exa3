@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlackjackManager.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="CardSuits.cs" />
     <Compile Include="Dealer.cs" />
