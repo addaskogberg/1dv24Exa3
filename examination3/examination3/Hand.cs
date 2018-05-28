@@ -56,6 +56,32 @@ namespace examination3
             TranslateFaces(card);
         }
 
+        public bool IsBusted()
+        {
+            if (sum > 21)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        public bool HasFiveCards()
+        {
+            if (cardsInHand.Count >=5)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
         public override string ToString()
         {
             string hand = "";
