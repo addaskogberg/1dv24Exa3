@@ -8,28 +8,63 @@ namespace examination3
     public class Hand
     {
         private int sum;
+        private int aces;
+        private List<Card> cardsInHand = new List<Card>();
+
 
         public int Sum
         {
-            get => default(int);
-            set
+            get
             {
+                if(sum >21 && aces >0)
+                {
+                    sum -= 13;
+                    aces -= 1;
+                }
+                return sum;
             }
         }
 
-        public void TranslateFaces()
+        public void TranslateFaces(Card card)
         {
-            throw new System.NotImplementedException();
+           if(card.Face == "A")
+            {
+                sum += 14;
+                aces++;
+            }
+            else if (card.Face == "Kn")
+            {
+                sum += 11;
+            }
+            else if (card.Face == "Q")
+            {
+                sum += 12;
+            }
+            else if (card.Face == "K")
+            {
+                sum += 13;
+            }
+            else
+            {
+                sum += int.Parse(card.Face);
+            }
         }
 
-        public void AddCard()
+        public void AddCard(Card card)
         {
-            throw new System.NotImplementedException();
+            cardsInHand.Add(card);
+            TranslateFaces(card);
         }
 
         public override string ToString()
         {
-            throw new System.NotImplementedException();
+            string hand = "";
+            foreach(Card card in cardsInHand)
+            {
+                hand += card.Face + card.Suit + " ";
+            }
+
+            return hand;
         }
     }
 }

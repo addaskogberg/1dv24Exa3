@@ -18,7 +18,7 @@ namespace examination3
             dealerDeck = new Deck(true);
             foreach(var card in dealerDeck.Cards)
             {
-                Console.WriteLine(card.Face + " " + card.Suit);
+               // Console.WriteLine(card.Face + " " + card.Suit);
             }
             
         }

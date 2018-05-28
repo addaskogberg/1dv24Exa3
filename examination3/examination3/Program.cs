@@ -10,6 +10,7 @@ namespace examination3
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             BlackjackManager blackjackmanager = new BlackjackManager();
             blackjackmanager.StartGame();
         }

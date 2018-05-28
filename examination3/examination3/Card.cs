@@ -7,7 +7,7 @@ namespace examination3
 {
     public class Card
     {
-        private string suit; 
+        private char suit; 
         private string face;
 
         public string Face
@@ -22,7 +22,7 @@ namespace examination3
             }
         }
 
-        public String Suit
+        public Char Suit
         {
             get
             {
@@ -34,10 +34,16 @@ namespace examination3
             }
         }
 
-        public Card(String suit, string face)
+        public Card(Char suit, string face)
         {
             Suit = suit;
             Face = face;
+        }
+
+        public override string ToString()
+        {
+            // just to return something - change!
+            return Face + Suit;
         }
     }
 }
