@@ -3,51 +3,44 @@
   <Class Name="examination3.Dealer">
     <Position X="10.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAACAAAAAgABAAAEABAABAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAABAACAAQAAgABAAAAABAAAAAQAAAAA=</HashCode>
       <FileName>Dealer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.Deck">
     <Position X="2.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAACAAAAAAAAAAAAAIAAAABAA=</HashCode>
+      <HashCode>gAAAAAAQAiAAAAAAACgAACAoAAAAAAAAAAAIAAAABAA=</HashCode>
       <FileName>Deck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.Card">
     <Position X="6.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAQAABAAAAAQAACAAAAAgAAAAQAA=</HashCode>
+      <HashCode>AEAAAABAAAAAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Card.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.Player">
     <Position X="8.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEQAAAAACQAAAAEAAAAAAAAAAAAEAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AEQAAAAACSAAAAEgAAAAAAQAAAAEAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.BlackjackManager">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABAAAAAAAAEAgAABAAAAAIAQAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAEAgAAAAAAAAIAQAgAQAAAA=</HashCode>
       <FileName>BlackjackManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="examination3.Hand">
     <Position X="4.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAJAAAAAAAAAAEAAAAAAAAAACAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AEAAJAAAAAAAAAAEAACAAAAAAACACAAAAAAAgAAAAAQ=</HashCode>
       <FileName>Hand.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="examination3.CardSuits">
-    <Position X="0.5" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAQAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAACA=</HashCode>
-      <FileName>CardSuits.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

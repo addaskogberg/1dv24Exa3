@@ -7,37 +7,49 @@ namespace examination3
 {
     public class Player
     {
+        private Hand hand;
         private int maxCardSum;
         private String name;
 
-        public Player(string name)
+        public Player(string name, int maxCardSum)
         {
             this.Name = name;
+            this.hand = new Hand();
+            this.maxCardSum = maxCardSum;
         }
 
         public int MaxCardSum
         {
-            get => default(int);
-            set
+            get 
             {
+                return maxCardSum;
             }
         }
 
         public string Name { get => name; set => name = value; }
+        public Hand Hand { get => hand; }
 
-        public void IsBusted()
+        public bool IsBusted()
         {
-            throw new System.NotImplementedException();
+            return Hand.IsBusted();
         }
 
-        public void EmptiesHand()
+        // skapar ny lista för att undvika att skicka referenser
+        public List<Card> EmptiesHand()
         {
-            throw new System.NotImplementedException();
+            List<Card> cardsToReturn = new List<Card>();
+            foreach (Card card in hand.CardsInHand)
+            {
+                cardsToReturn.Add(card);
+            }
+
+            hand.CardsInHand = new List<Card>();
+            return cardsToReturn;
         }
 
-        public void HasFiveCards()
+        public bool HasFiveCards()
         {
-            throw new System.NotImplementedException();
+            return Hand.HasFiveCards();
         }
 
         public void FullHand()

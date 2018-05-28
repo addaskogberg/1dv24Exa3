@@ -24,10 +24,12 @@ namespace examination3
             }
             ShuffelDeck();
     
+            /*
             for(int i = 0; i< 10; i++)
             {
                 Console.WriteLine(GetNextCard());
             }
+            */
         }
 
         public void InitiateDeck()
@@ -55,24 +57,31 @@ namespace examination3
             }
         }
 
-        public void MoveToTrashDeck()
+        public void MoveToTrashDeck(Card card)
         {
-            throw new System.NotImplementedException();
+            trashDeck.Add(card);
         }
 
         public void FillDeck()
         {
-            throw new System.NotImplementedException();
+            foreach(Card card in trashDeck)
+            {
+                cards.Add(card);
+                // Console.WriteLine("Added card " + card.ToString());
+            }
+            trashDeck = new List<Card>();
         }
 
         public Card GetNextCard()
         {
+            // Console.WriteLine("Cards remaining " + cards.Count + " trash remaining " + trashDeck.Count);
             if (cards.Count < 1)
             {
+                Console.WriteLine("System: Shuffling cards from trash and adding them to deck!");
                 FillDeck();
             }
             Card c = cards[0];
-           // Console.WriteLine(c);
+            // Console.WriteLine(c);
             cards.RemoveAt(0);
             return c;
         }

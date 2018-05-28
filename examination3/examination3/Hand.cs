@@ -16,21 +16,39 @@ namespace examination3
         {
             get
             {
-                if(sum >21 && aces >0)
+                if(sum >21 && Aces >0)
                 {
                     sum -= 13;
-                    aces -= 1;
+                    Aces -= 1;
                 }
                 return sum;
             }
+            set
+            {
+                this.sum = value;
+            }
         }
+
+        public List<Card> CardsInHand
+        {
+            get
+            {
+                return cardsInHand;
+            }
+            set
+            {
+                this.cardsInHand = value;
+            }
+        }
+
+        public int Aces { get => aces; set => aces = value; }
 
         public void TranslateFaces(Card card)
         {
            if(card.Face == "A")
             {
                 sum += 14;
-                aces++;
+                Aces++;
             }
             else if (card.Face == "Kn")
             {

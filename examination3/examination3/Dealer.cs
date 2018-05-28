@@ -8,19 +8,15 @@ namespace examination3
     public class Dealer : Player
     {
         private Deck dealerDeck;
-        private Deck trashDeck;
+        // private Deck trashDeck;
         private int player;
         // private string name;
 
         public Dealer(string name)
-            : base(name)
+            : base(name, 15)
         {
             dealerDeck = new Deck(true);
-            foreach(var card in dealerDeck.Cards)
-            {
-               // Console.WriteLine(card.Face + " " + card.Suit);
-            }
-            
+            // trashDeck = new Deck(false);
         }
 
         public Deck DealerDeck
@@ -31,9 +27,9 @@ namespace examination3
             }
         }
 
-        public int Player
+        public Player Player
         {
-            get => default(int);
+            get => default(Player);
             set
             {
             }
@@ -47,9 +43,14 @@ namespace examination3
             }
         }
 
-        public void AskForNewCard()
+        public Card AskForNewCard()
         {
-            throw new System.NotImplementedException();
+            return dealerDeck.GetNextCard();
+        }
+
+        public void AddTrashCard(Card card)
+        {
+            dealerDeck.MoveToTrashDeck(card);
         }
     }
 }
