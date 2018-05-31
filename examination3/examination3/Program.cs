@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace examination3
 {
     class Program
-    {
+    {   // initierar spelet
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;

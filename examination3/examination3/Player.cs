@@ -11,13 +11,14 @@ namespace examination3
         private int maxCardSum;
         private String name;
 
+        // spelarkonstruktor
         public Player(string name, int maxCardSum)
         {
             this.Name = name;
             this.hand = new Hand();
             this.maxCardSum = maxCardSum;
         }
-
+        
         public int MaxCardSum
         {
             get 
@@ -28,7 +29,8 @@ namespace examination3
 
         public string Name { get => name; set => name = value; }
         public Hand Hand { get => hand; }
-
+       
+        //referens till handen som kontrollerar om spelaren är tjock
         public bool IsBusted()
         {
             return Hand.IsBusted();
@@ -46,15 +48,11 @@ namespace examination3
             hand.CardsInHand = new List<Card>();
             return cardsToReturn;
         }
-
+        // referens till handen som kontrollerar om det finns fem kort
         public bool HasFiveCards()
         {
             return Hand.HasFiveCards();
         }
 
-        public void FullHand()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

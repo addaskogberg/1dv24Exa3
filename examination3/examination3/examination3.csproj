@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="BlackjackManager.cs" />
     <Compile Include="Card.cs" />
-    <Compile Include="CardSuits.cs" />
     <Compile Include="Dealer.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Hand.cs" />

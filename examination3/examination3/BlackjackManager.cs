@@ -9,7 +9,7 @@ namespace examination3
     {
         List<Player> players = new List<Player>();
         Dealer dealer;
-
+        // startar spelet anger hur många spelare.
         public void StartGame()
         {
             Console.WriteLine("*** 21 ***");
@@ -20,6 +20,7 @@ namespace examination3
             Console.Read();
         }
 
+        // metod för att avgöra om det är en spelare som spelar flera omgångar eller flera spelare som spelar en gång
         private void RunOnePlayerMultipleTimesOrMultiplePlayers()
         {
             if (players.Count == 1)
@@ -35,6 +36,7 @@ namespace examination3
             }
         }
 
+        // välj hur många som spelar
         private int GetNumberOfPlayers()
         {
             int numbers = -1;
@@ -58,6 +60,7 @@ namespace examination3
             return numbers;
         }
 
+        //skapar spelare
         private void AddPlayers(int numberOf)
         {
             for (int i = 1; i <= numberOf; i++)
@@ -66,18 +69,10 @@ namespace examination3
             }
         }
 
-        private void ReadPlayers()
-        {
-            foreach (Player player in players)
-            {
-                Console.WriteLine(player.Name);
-            }
-        }
 
-        /**
-        * prepares a new round by emptying the hands and moving the used cards
-        * to the trash deck
-        */
+
+        
+        // förbereder ny omgång genom att tömma handen och flytta korten till skräphögen
         public void PrepareNewRound()
         {
             foreach(Player player in players)
@@ -93,6 +88,7 @@ namespace examination3
             EmptieDealerHand();
         }
 
+        // tömmer dealerns hand
         public void EmptieDealerHand()
         {
             List<Card> cards = dealer.EmptiesHand();
@@ -104,6 +100,7 @@ namespace examination3
             dealer.Hand.Aces = 0;
         }
 
+        //spellogiken och utskrift
         public void RunGame()
         {
             foreach (Player player in players)

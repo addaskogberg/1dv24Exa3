@@ -8,15 +8,13 @@ namespace examination3
     public class Dealer : Player
     {
         private Deck dealerDeck;
-        // private Deck trashDeck;
-        private int player;
-        // private string name;
+       
+     
 
         public Dealer(string name)
             : base(name, 15)
         {
             dealerDeck = new Deck(true);
-            // trashDeck = new Deck(false);
         }
 
         public Deck DealerDeck
@@ -43,11 +41,12 @@ namespace examination3
             }
         }
 
+        // hämtar nytt kort
         public Card AskForNewCard()
         {
             return dealerDeck.GetNextCard();
         }
-
+        // kastar dealers kort i skräphögen
         public void AddTrashCard(Card card)
         {
             dealerDeck.MoveToTrashDeck(card);

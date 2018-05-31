@@ -11,7 +11,7 @@ namespace examination3
         private int aces;
         private List<Card> cardsInHand = new List<Card>();
 
-
+        // Hämtar summan om summan är större än 21 och där finns ess ändras värdet på esset
         public int Sum
         {
             get
@@ -29,6 +29,7 @@ namespace examination3
             }
         }
 
+ 
         public List<Card> CardsInHand
         {
             get
@@ -43,6 +44,7 @@ namespace examination3
 
         public int Aces { get => aces; set => aces = value; }
 
+        // översätter korten till int
         public void TranslateFaces(Card card)
         {
            if(card.Face == "A")
@@ -73,7 +75,7 @@ namespace examination3
             cardsInHand.Add(card);
             TranslateFaces(card);
         }
-
+        // tittar om spelare är tjock
         public bool IsBusted()
         {
             if (sum > 21)
@@ -87,6 +89,7 @@ namespace examination3
 
         }
 
+        //tittar om spelare har 5 kort och därmed vinst
         public bool HasFiveCards()
         {
             if (cardsInHand.Count >=5)

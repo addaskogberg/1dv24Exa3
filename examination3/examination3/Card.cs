@@ -42,7 +42,6 @@ namespace examination3
 
         public override string ToString()
         {
-            // just to return something - change!
             return Face + Suit;
         }
     }
